@@ -29,9 +29,15 @@ const Player1Registration = () =>{
         }
 
         const dataToUpdate = {
-            Name: Name, // Update Name field
-            Email: Email, // Update Email field
-            Player: "P1", // Update Player field
+            Name: Name, 
+            Email: Email,
+            Player: "P1",
+            Lap1:0,
+            Lap2:0,
+            Lap3:0,
+            Lap4:0,
+            Lap5:0,
+            Score:0,
           };
 
         CurrentUsers.doc(docId)
@@ -48,6 +54,7 @@ const Player1Registration = () =>{
             Email:Email,
             Number:Number,
             Player:"P1",
+            Score:0,
             time: firebase.firestore.FieldValue.serverTimestamp()
         }).then(()=>{
             navigate('/Player2Registration')
