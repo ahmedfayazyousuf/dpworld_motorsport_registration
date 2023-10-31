@@ -1,0 +1,46 @@
+body, html{
+    font-weight: 400;   
+    height: 100vh;
+    -webkit-overflow-scrolling: touch;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: 0.6;
+}
+
+html{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+@font-face{
+    font-family: myFont;
+    src:url(PilatWide-Light.ttf);
+}
+*{
+    font-family: myFont;
+}
+
+@font-face{
+    font-family: myFontSpecial;
+    src:url(PilatWide-Bold.ttf);
+}
+.specialFont{
+    font-family: myFontSpecial;
+}
+
+tr:nth-child(even) {  
+    background-color: #ffffff;  
+} 
+
+@media only screen and (max-width: 600px) {
+    .slotparent{
+        flex-direction: row;
+    }
+    .slotdiv{
+        flex-direction: column;
+    }
+    .rower{
+        flex-direction: column;
+    }
+}
