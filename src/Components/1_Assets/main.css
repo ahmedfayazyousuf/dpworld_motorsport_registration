@@ -1,10 +1,5 @@
 body, html{
-    font-weight: 400;   
     height: 100vh;
-    -webkit-overflow-scrolling: touch;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: 0.6;
 }
 
 html{
@@ -29,8 +24,17 @@ html{
     font-family: myFontSpecial;
 }
 
+tr:nth-child(odd) {  
+    background-color: #1E1450;
+    color: white;  
+    border: 1px solid white;
+} 
+
+
 tr:nth-child(even) {  
-    background-color: #ffffff;  
+    background-color: #000000;  
+    color: white;
+    border: 1px solid white;
 } 
 
 @media only screen and (max-width: 600px) {
