@@ -31,7 +31,7 @@ const Player2Registration = () =>{
         const dataToUpdate = {
             Name: Name, 
             Email: Email,
-            Player: "P1",
+            Player: "P2",
             Lap1:0,
             Lap2:0,
             Lap3:0,
@@ -53,7 +53,7 @@ const Player2Registration = () =>{
             Name:Name,
             Email:Email,
             Number:Number,
-            Player:"P1",
+            Player:"P2",
             Score:0,
             time: firebase.firestore.FieldValue.serverTimestamp()
         }).then(()=>{
