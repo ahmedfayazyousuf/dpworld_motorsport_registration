@@ -21,6 +21,15 @@ const Player2Registration = () =>{
             document.getElementById('error').innerHTML = "PLEASE ENTER YOUR NAME"
             return;
         }
+
+        var validRegex =   /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+        if (Email === "" || !Email.match(validRegex))
+        {
+            document.getElementById('error').innerHTML = "PLEASE ENTER A VALID EMAIL"
+            return;
+        }
+
         // eslint-disable-next-line
         if (document.getElementById("no").value === "" ||  document.getElementById("no").value.slice(0,3) != 971 ){
             console.log('Hello')
@@ -72,7 +81,7 @@ const Player2Registration = () =>{
                 </div>
 
                 <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '100vh', marginBottom:'10px'}}>
-                    <h1 className='specialFont' style={{paddingRight: '50px', paddingLeft: '50px', fontSize: '20px', color: 'black'}}>PLAYER 2 REGISTRATION</h1>
+                    <h1 className='specialFont' style={{paddingRight: '50px', paddingLeft: '50px', fontSize: '20px', color: 'white'}}>PLAYER 2 REGISTRATION</h1>
                 </div>
 
                 <div style={{width:"100%", display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
@@ -90,7 +99,7 @@ const Player2Registration = () =>{
                 </div>
 
                 <div style={{display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'center', marginBottom:'60px'}} onClick={HandleSubmit}>        
-                    <button>Submit</button>
+                    <button id="buttontext" style={{background: 'white', padding: '10px', width: '120px'}}>Submit</button>
                 </div>
 
             </div>
