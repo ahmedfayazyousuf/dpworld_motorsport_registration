@@ -33,21 +33,21 @@ const Success = () => {
         <h1 style={{ paddingRight: '50px', paddingLeft: '50px', color: 'white', fontSize: '20px' }}>Your response has been recorded</h1>
         <h1 style={{ paddingRight: '50px', paddingLeft: '50px', color: 'white', marginTop: '10px' }}>LET'S PLAY!</h1>
 
-        <div style={{ display: 'flex', width: '280px', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-            <div style={{display: 'flex', width: '120px', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                <p style={{ color: 'white' }}>Player 1: </p>
+        <div style={{ display: 'flex', width: '300px', background: 'black', justifyContent: 'center', alignItems: 'center', border:'1px solid white', borderBottom: 'none'}}>
+            <div style={{display: 'flex', width: '150px', justifyContent: 'center', alignItems: 'center'}}>
+                <p className='specialFont' style={{ color: 'white' }}>Player 1: </p>
             </div>
-            <div style={{display: 'flex', width: '160px', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                <p style={{ color: 'white' }}>{player1Name}</p>
+            <div style={{display: 'flex', width: '150px', justifyContent: 'center', alignItems: 'center'}}>
+                <p className='specialFont' style={{ color: 'white' }}>{player1Name}</p>
             </div>
         </div>
 
-        <div style={{ display: 'flex', width: '280px', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-            <div style={{display: 'flex', width: '120px', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                <p style={{ color: 'white' }}>Player 2: </p>
+        <div style={{ display: 'flex', width: '300px', background: 'black', justifyContent: 'center', alignItems: 'center', border:'1px solid white'}}>
+            <div style={{display: 'flex', width: '150px', justifyContent: 'center', alignItems: 'center'}}>
+                <p className='specialFont' style={{ color: 'white' }}>Player 2: </p>
             </div>
-            <div style={{display: 'flex', width: '160px', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                <p style={{ color: 'white' }}>{player2Name}</p>
+            <div style={{display: 'flex', width: '150px', justifyContent: 'center', alignItems: 'center'}}>
+                <p className='specialFont' style={{ color: 'white' }}>{player2Name}</p>
             </div>
         </div>
         
