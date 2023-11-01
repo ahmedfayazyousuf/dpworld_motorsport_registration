@@ -1,11 +1,11 @@
 body, html{
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #1E1450;
+    overflow: hidden;
 }
 
 html{
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 
@@ -21,6 +21,7 @@ html{
     font-family: myFontSpecial;
     src:url(PilatWide-Bold.ttf);
 }
+
 .specialFont{
     font-family: myFontSpecial;
 }
@@ -38,14 +39,4 @@ tr:nth-child(even) {
     border: 1px solid white;
 } 
 
-@media only screen and (max-width: 600px) {
-    .slotparent{
-        flex-direction: row;
-    }
-    .slotdiv{
-        flex-direction: column;
-    }
-    .rower{
-        flex-direction: column;
-    }
-}
+

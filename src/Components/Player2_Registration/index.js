@@ -72,18 +72,18 @@ const Player2Registration = () =>{
     
     return( 
             
-        <div style={{display:"flex", flexDirection:"column", width:"100vw", height: "100%", justifyContent:"center", alignItems:"center"}}>
+        <div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
 
             <div style={{display: 'flex', flexDirection: 'column', width: '70%', gap:'5px', alignItems: 'center', justifyContent:'center'}}>
 
-                <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginBottom: '18px', paddingTop:'45px'}}>
-                    <img style={{minWidth: '100px', maxWidth: '300px'}} src={DPWorldLogo} alt="NBALogo"/>
+                <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginBottom: '5px', paddingTop:'45px'}}>
+                    <img style={{minWidth: '100px', maxWidth: '250px'}} src={DPWorldLogo} alt="NBALogo"/>
                 </div>
 
                 <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '100vh', marginBottom:'10px'}}>
                     <h1 className='specialFont' style={{paddingRight: '50px', paddingLeft: '50px', fontSize: '20px', color: 'white'}}>PLAYER 2 REGISTRATION</h1>
                 </div>
-
+                
                 <div style={{width:"100%", display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                     <input type="text" placeholder='NAME' id="Name" style={{background:"transparent", borderRadius: '0px', border:"1px solid black", textAlign: 'center', marginBottom:'15px', width:"100%", height:'27px', color:"black", paddingLeft: '10px', paddingRight: '10px', backgroundColor: 'white'}}/> 
                 </div>
