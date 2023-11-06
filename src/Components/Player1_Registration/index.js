@@ -72,34 +72,34 @@ const Player1Registration = () =>{
     
     return( 
             
-        <div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+        <div style={{display:"flex", justifyContent:"center", alignItems:"center", height: '100vh'}}>
 
             <div style={{display: 'flex', flexDirection: 'column', width: '70%', gap:'5px', alignItems: 'center', justifyContent:'center'}}>
 
                 <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginBottom: '5px', paddingTop:'45px'}}>
-                    <img style={{minWidth: '100px', maxWidth: '250px'}} src={DPWorldLogo} alt="NBALogo"/>
+                    <img style={{width: '100%'}} src={DPWorldLogo} alt="NBALogo"/>
                 </div>
 
                 <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '100vh', marginBottom:'10px'}}>
-                    <h1 className='specialFont' style={{paddingRight: '50px', paddingLeft: '50px', fontSize: '20px', color: 'white'}}>PLAYER 1 REGISTRATION</h1>
+                    <h1 className='specialFont' style={{paddingRight: '50px', paddingLeft: '50px', fontSize: '25px', color: 'white'}}>REGISTRATION – PLAYER 1</h1>
                 </div>
                 
                 <div style={{width:"100%", display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                    <input type="text" placeholder='NAME' id="Name" style={{background:"transparent", borderRadius: '0px', border:"1px solid black", textAlign: 'center', marginBottom:'15px', width:"100%", height:'27px', color:"black", paddingLeft: '10px', paddingRight: '10px', backgroundColor: 'white'}}/> 
+                    <input className='specialFont' type="text" placeholder='NAME' id="Name" style={{opacity: '0.6', background:"white", border:"1px solid black", textAlign: 'center', marginBottom:'15px', width:"100%", height:'70px', color:"black", paddingLeft: '10px', paddingRight: '10px', backgroundColor: 'white', borderRadius: '120px', fontSize: '25px'}}/> 
                 </div>
                 <div style={{width:"100%", display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                    <input type="email" placeholder='EMAIL' id='email' style={{background:"transparent", borderRadius: '0px', border:"1px solid black", textAlign: 'center', marginBottom:'15px', width:"100%", height:'27px', color:"black", paddingLeft: '10px', paddingRight: '10px', backgroundColor: 'white' }} />
+                    <input className='specialFont' type="email" placeholder='EMAIL' id='email' style={{opacity: '0.6', background:"white", border:"1px solid black", textAlign: 'center', marginBottom:'15px', width:"100%", height:'70px', color:"black", paddingLeft: '10px', paddingRight: '10px', backgroundColor: 'white' , borderRadius: '120px', fontSize: '25px'}} />
                 </div>
                 <div style={{width:"100%", display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                    <input type="number" placeholder='MOBILE (971 xx xxx xxxx)' id='no' style={{background:"transparent", borderRadius: '0px', border:"1px solid black", textAlign: 'center', width:"100%", height:'27px', color:"black", paddingLeft: '10px', paddingRight: '10px', backgroundColor: 'white' }} />
+                    <input className='specialFont' type="number" placeholder='MOBILE PHONE' id='no' style={{ opacity: '0.6', background:"white", border:"1px solid black", textAlign: 'center', width:"100%", height:'70px', color:"black", paddingLeft: '10px', paddingRight: '10px', backgroundColor: 'white', borderRadius: '120px', fontSize: '25px' }} />
                 </div>
 
                 <div style={{height: '10px', display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center'}}>
                     <p id='error' style={{color:"red", fontSize: '10px'}}></p>
                 </div>
 
-                <div style={{display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'center', marginBottom:'60px'}} onClick={HandleSubmit}>        
-                    <button id="buttontext" style={{background: 'white', padding: '10px', width: '120px'}}>Submit</button>
+                <div style={{display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'center', marginBottom:'60px'}} onClick={HandleSubmit}>
+                    <button className='specialFont' id="buttontext" style={{background: 'white', height: '70px', padding: '10px', width: '220px', backgroundColor: 'white', borderRadius: '120px', fontSize: '25px', color: '#1E1450'}}>REGISTER</button>
                 </div>
 
             </div>
