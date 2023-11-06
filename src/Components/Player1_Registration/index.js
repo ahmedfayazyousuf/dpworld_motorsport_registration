@@ -41,11 +41,6 @@ const Player1Registration = () =>{
             Name: Name, 
             Email: Email,
             Player: "P1",
-            Lap1:0,
-            Lap2:0,
-            Lap3:0,
-            Lap4:0,
-            Lap5:0,
             Score:0,
           };
 
@@ -99,7 +94,7 @@ const Player1Registration = () =>{
                 </div>
 
                 <div style={{display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'center', marginBottom:'60px'}} onClick={HandleSubmit}>
-                    <button className='specialFont' id="buttontext" style={{background: 'white', height: '70px', padding: '10px', width: '220px', backgroundColor: 'white', borderRadius: '120px', fontSize: '25px', color: '#1E1450'}}>REGISTER</button>
+                    <button className='specialFont' id="buttontext" style={{background: 'white', height: '70px', padding: '10px', width: '250px', backgroundColor: 'white', borderRadius: '120px', fontSize: '30px', color: '#1E1450'}}>REGISTER</button>
                 </div>
 
             </div>
