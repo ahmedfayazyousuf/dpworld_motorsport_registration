@@ -9,7 +9,6 @@ const Success = () => {
         <img style={{ width: '500px'}} src={DPWorldLogo} alt="tick" />
         <h1 style={{ color: 'white', fontSize: '25px', marginTop: '60px' }}>INSTRUCTIONS</h1>
 
-
         <p style={{fontSize: '20px', color: '#DA1E59'}}>Join the Race!</p>
         <p style={{fontSize: '15px', color: 'white', marginTop: '-15px', width: '65%'}}>Register as a Racer. <br></br>Grab your designated joystick and get set for high-octane action!</p>
 
@@ -20,19 +19,16 @@ const Success = () => {
         <p style={{fontSize: '15px', color: 'white', marginTop: '-15px', width: '65%'}}>It's pedal-to-the-metal time! <br></br> Conquer every curve, break every record and feel the adrenaline rush!</p>
 
         
-        
         <p style={{fontSize: '20px', color: '#DA1E59'}}>5 Laps of Epic Excitement!</p>
         <p style={{fontSize: '15px', color: 'white', marginTop: '-15px', width: '65%'}}>Race against the clock. <br></br>Aim for the leaderboard's glory!</p>
         <p style={{fontSize: '15px', color: 'white', marginTop: '-12px'}}>Can you reach the top and become a legend?</p>
 
 
-        
-
-          <NavLink to="/Player1Registration" style={{textDecoration: 'none'}}>
+        <NavLink to="/Player1Registration" style={{textDecoration: 'none'}}>
             <div style={{display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'center', marginTop: '40px'}}>
                 <button id="buttontext" style={{background: 'white', height: '70px', padding: '10px', width: '250px', backgroundColor: 'white', borderRadius: '120px', fontSize: '25px', color: '#1E1450', border: '1px solid transparent'}}>LETS GO!</button>
             </div>
-          </NavLink>
+        </NavLink>
 
     </div>
   )
