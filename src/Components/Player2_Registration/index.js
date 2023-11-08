@@ -49,8 +49,7 @@ const Player1Registration = () =>{
             CountryCode: CountryCode,
             Number: Number,
             Player: "P2",
-            Score: 0,
-            
+            time: firebase.firestore.FieldValue.serverTimestamp(),
         };
     
         CurrentUsers.doc(docId)
@@ -332,10 +331,6 @@ const Player1Registration = () =>{
                         I consent to the terms and conditions*
                     </label>
                 </div>
-
-                {/* <div style={{height: '10px', display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', marginBottom: '10px'}}>
-                    <p id='error' style={{color:"red", fontSize: '10px'}}></p>
-                </div> */}
 
                 <div style={{display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'center'}}>
                     <button onClick={HandleSubmit} className='specialFont' id="buttontext" style={{background: 'white', height: '70px', padding: '10px', width: '250px', backgroundColor: 'white', borderRadius: '120px', fontSize: '30px', color: '#1E1450', border: '1px solid transparent'}}>REGISTER</button>
