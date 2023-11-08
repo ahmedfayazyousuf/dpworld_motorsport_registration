@@ -11,18 +11,18 @@ const Success = () => {
 
 
         <p style={{fontSize: '20px', color: '#DA1E59'}}>Join the Race!</p>
-        <p style={{fontSize: '15px', color: 'white', marginTop: '-15px', width: '65%'}}>Register as a Racer. Grab your designated joystick and get set for high-octane action!.</p>
+        <p style={{fontSize: '15px', color: 'white', marginTop: '-15px', width: '65%'}}>Register as a Racer. <br></br>Grab your designated joystick and get set for high-octane action!</p>
 
         <p style={{fontSize: '20px', color: '#DA1E59'}}>Lights Out, Go Time!</p>
-        <p style={{fontSize: '15px', color: 'white', marginTop: '-15px', width: '65%'}}>When those lights go out, your engines roar to life. Rev up your engines and let loose on the track!</p>
+        <p style={{fontSize: '15px', color: 'white', marginTop: '-15px', width: '65%'}}>When those lights go out, your engines roar to life. <br></br> Rev up your engines and let loose on the track!</p>
 
         <p style={{fontSize: '20px', color: '#DA1E59'}}>Max Thrills, No Limits!</p>
-        <p style={{fontSize: '15px', color: 'white', marginTop: '-15px', width: '65%'}}>It's pedal-to-the-metal time! Conquer every curve, break the records, and feel the adrenaline rush!</p>
+        <p style={{fontSize: '15px', color: 'white', marginTop: '-15px', width: '65%'}}>It's pedal-to-the-metal time! <br></br> Conquer every curve, break every record and feel the adrenaline rush!</p>
 
         
         
         <p style={{fontSize: '20px', color: '#DA1E59'}}>5 Laps of Epic Excitement!</p>
-        <p style={{fontSize: '15px', color: 'white', marginTop: '-15px', width: '65%'}}>Race against the clock. Aim for the leaderboard's glory!</p>
+        <p style={{fontSize: '15px', color: 'white', marginTop: '-15px', width: '65%'}}>Race against the clock. <br></br>Aim for the leaderboard's glory!</p>
         <p style={{fontSize: '15px', color: 'white', marginTop: '-12px'}}>Can you reach the top and become a legend?</p>
 
 
