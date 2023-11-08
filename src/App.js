@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import './App.css';
 
+import Home from './Components/Home';
 import Success from './Components/Success';
 import Leaderboard from './Components/Leaderboard';
 import Leaderboard2 from './Components/Leaderboard2';
@@ -13,6 +14,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <Routes>
+          <Route exact path="/" element={<Home />} />
           <Route path="/Success" element={<Success />} />
           <Route path="/Leaderboard" element={<Leaderboard />} />
           <Route path="/Leaderboard2" element={<Leaderboard2 />} />

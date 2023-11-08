@@ -1,3 +1,4 @@
+// import { NavLink } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import firebase from '../../firebase';
 import '../1_Assets/main.css';
@@ -103,7 +104,7 @@ const Player1Registration = () =>{
                 <div style={{width:"101%", display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
                     
                     <select id="countryCode" required style = {{ width: '30%',  opacity: '0.6', background:"white", border:"1px solid transparent", textAlign: 'center', height:'74px', color:"black", paddingLeft: '10px', paddingRight: '10px', backgroundColor: 'white', borderRadius: '120px 0px 0px 120px', fontSize: '25px'}}>
-                        <option selected value="(+971) UAE">(+971) UAE</option>
+                        <option selected value="(+971) UAE">(+971)</option>
                         <option value="+213 Algeria">+213 Algeria</option>
                         <option value="+376 Andorra">+376 Andorra</option>
                         <option value="+244 Angola">+244 Angola</option>
@@ -333,7 +334,9 @@ const Player1Registration = () =>{
                 </div>
 
                 <div style={{display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'center'}}>
-                    <button onClick={HandleSubmit} className='specialFont' id="buttontext" style={{background: 'white', height: '70px', padding: '10px', width: '250px', backgroundColor: 'white', borderRadius: '120px', fontSize: '30px', color: '#1E1450', border: '1px solid transparent'}}>REGISTER</button>
+                    {/* <NavLink to="/Player2Registration" style={{textDecoration: 'none'}}> */}
+                        <button onClick={HandleSubmit} className='specialFont' id="buttontext" style={{background: 'white', height: '70px', padding: '10px', width: '250px', backgroundColor: 'white', borderRadius: '120px', fontSize: '30px', color: '#1E1450', border: '1px solid transparent'}}>REGISTER</button>
+                    {/* </NavLink> */}
                 </div>
 
             </div>

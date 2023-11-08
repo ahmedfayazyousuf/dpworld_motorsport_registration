@@ -34,7 +34,7 @@ const Success = () => {
         <h1 style={{ paddingRight: '50px', paddingLeft: '50px', color: 'white', fontSize: '20px', marginTop: '60px' }}>Your responses have been recorded.</h1>
         <h1 style={{ paddingRight: '50px', paddingLeft: '50px', color: 'white', marginTop: '-10px', marginBottom: '60px' }}>LET'S PLAY!</h1>
 
-          <div style={{ display: 'flex', width: '70%'}}>
+          <div style={{ display: 'flex', width: '80%'}}>
             <div style={{flex: '100px', borderRadius: '100px', background: 'rgba(128,128,128,0.4)', display: 'flex', justifyContent: 'flex-start', alignItems: 'center', paddingLeft: '20px'}}>
               <h1 style={{ color: 'white', fontSize: '25px' }}>
                 Player 1
@@ -47,7 +47,7 @@ const Success = () => {
             </div>
           </div>
 
-          <div style={{ display: 'flex', width: '70%', marginTop: '10px'}}>
+          <div style={{ display: 'flex', width: '80%', marginTop: '10px'}}>
             <div style={{flex: '100px', borderRadius: '100px', background: 'rgba(128,128,128,0.4)', display: 'flex', justifyContent: 'flex-start', alignItems: 'center', paddingLeft: '20px'}}>
               <h1 style={{ color: 'white', fontSize: '25px' }}>
                 Player 2
@@ -65,12 +65,6 @@ const Success = () => {
                 <button id="buttontext" style={{background: 'white', height: '70px', padding: '10px', width: '250px', backgroundColor: 'white', borderRadius: '120px', fontSize: '25px', color: '#1E1450', border: '1px solid transparent'}}>RETURN</button>
             </div>
           </NavLink>
-
-          {/* <div style={{ display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'center', marginTop: '60px' }}>
-            <NavLink to="/" id="buttontext" style={{ background: 'white', height: '70px', padding: '10px', width: '250px', backgroundColor: 'white', borderRadius: '120px', fontSize: '25px', color: '#1E1450', border: '1px solid transparent' }}>
-              RETURN
-            </NavLink>
-          </div> */}
 
     </div>
   )
