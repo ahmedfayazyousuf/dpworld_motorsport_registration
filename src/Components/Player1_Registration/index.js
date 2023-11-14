@@ -326,13 +326,6 @@ const Player1Registration = () =>{
                 
                 </div>
 
-                {/* <div style={{ width: "100%", display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: '10px', marginBottom: '10px', paddingLeft: '10px'}}>
-                    <input type="checkbox" id="consent" required style={{height: '15px', border: '1px solid transparent', borderRadius: '10px'}} />
-                    <label for="consent" style={{ color: 'white', fontSize: '15px', marginLeft: '7px', marginBottom: '2px' }}>
-                        I consent to the terms and conditions*
-                    </label>
-                </div> */}
-
                 <div style={{display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'center', marginTop: '22px'}}>
                     {/* <NavLink to="/Player2Registration" style={{textDecoration: 'none'}}> */}
                         <button onClick={HandleSubmit} className='specialFont' id="buttontext" style={{background: 'white', height: '70px', padding: '10px', width: '250px', backgroundColor: 'white', borderRadius: '120px', fontSize: '30px', color: '#1E1450', border: '1px solid transparent'}}>REGISTER</button>
