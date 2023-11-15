@@ -62,7 +62,7 @@ const Success = () => {
 
           <NavLink to="/" style={{textDecoration: 'none'}}>
             <div style={{display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'center', marginTop: '60px'}}>
-                <button id="buttontext" style={{background: 'white', height: '70px', padding: '10px', width: '250px', backgroundColor: 'white', borderRadius: '120px', fontSize: '25px', color: '#1E1450', border: '1px solid transparent'}}>NEXT PLAYER</button>
+                <button id="buttontext" style={{background: 'white', height: '70px', padding: '10px', width: '250px', backgroundColor: 'white', borderRadius: '120px', fontSize: '25px', color: '#1E1450', border: '1px solid transparent'}}>NEXT GAME</button>
             </div>
           </NavLink>
 
