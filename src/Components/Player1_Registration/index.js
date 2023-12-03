@@ -71,7 +71,7 @@ const Player1Registration = () =>{
             time: firebase.firestore.FieldValue.serverTimestamp(),
             Consent: "Yes", 
         }).then(() => {
-            navigate('/Player2Registration');
+            navigate('/SuccessPlayer1');
         });
     }
     
