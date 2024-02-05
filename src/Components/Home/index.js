@@ -10,7 +10,7 @@ const Success = () => {
         <h1 style={{ color: 'white', fontSize: '25px', marginTop: '60px' }}>INSTRUCTIONS</h1>
 
         <p style={{fontSize: '20px', color: '#DA1E59'}}>Join the Race!</p>
-        <p style={{fontSize: '15px', color: 'white', marginTop: '-15px', width: '65%'}}>Register as a Racer. <br></br>Grab your designated joystick and get set for high-octane action!</p>
+        <p style={{fontSize: '15px', color: 'white', marginTop: '-15px', width: '65%'}}>Register as a Racer. <br></br>Grab your joystick and get set for high-octane action!</p>
 
         <p style={{fontSize: '20px', color: '#DA1E59'}}>Lights Out, Go Time!</p>
         <p style={{fontSize: '15px', color: 'white', marginTop: '-15px', width: '65%'}}>When those lights go out, your engines roar to life. <br></br> Rev up your engines and let loose on the track!</p>
