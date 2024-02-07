@@ -87,7 +87,7 @@ const Player1Registration = () =>{
                 </div>
 
                 <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '100vh', marginBottom:'-15px'}}>
-                    <h1 className='specialFont' style={{paddingRight: '50px', paddingLeft: '50px', fontSize: '25px', color: 'white'}}>REGIlSTRATION</h1>
+                    <h1 className='specialFont' style={{paddingRight: '50px', paddingLeft: '50px', fontSize: '25px', color: 'white'}}>REGISTRATION</h1>
                 </div>
 
                 <div style={{height: '10px', display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', marginBottom: '5px'}}>
@@ -103,7 +103,7 @@ const Player1Registration = () =>{
 
                 <div style={{width:"101%", display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', height: '70px'}}>
                     
-                    <select id="countryCode" required style = {{ width: '30%',  opacity: '0.6', background:"white", border:"1px solid transparent", textAlign: 'center', height:'70px', color:"black", paddingLeft: '10px', paddingRight: '10px', backgroundColor: 'white', borderRadius: '120px 0px 0px 120px', fontSize: '25px'}}>
+                    <select id="countryCode" required style = {{ width: '30%',  opacity: '0.6', background:"white", border:"1px solid transparent", textAlign: 'center', height:'84px', color:"black", paddingLeft: '10px', paddingRight: '10px', backgroundColor: 'white', borderRadius: '120px 0px 0px 120px', fontSize: '25px'}}>
                         <option selected value="(+971) UAE">(+971)</option>
                         <option value="+213 Algeria">+213 Algeria</option>
                         <option value="+376 Andorra">+376 Andorra</option>
