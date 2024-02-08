@@ -14,19 +14,6 @@ const Leaderboard = () => {
   };
 
   useEffect(() => {
-
-    const usersCollection = firebase.firestore().collection("Users");
-    // eslint-disable-next-line
-    const usersUnsubscribe = usersCollection.onSnapshot((querySnapshot) => {
-      const users = [];
-      querySnapshot.forEach((doc) => {
-        users.push({ id: doc.id, ...doc.data() });
-      });
-      setUsersData(users);
-      console.log("Users Collection:", users);
-    });
-
-
     const Leaderboard = firebase.firestore().collection("Leaderboard");
     const query = Leaderboard.orderBy("Score", "asc").limit(10);
 
@@ -36,6 +23,7 @@ const Leaderboard = () => {
         data.push({ id: doc.id, ...doc.data() });
       });
       setLeaderboardData(data);
+      console.log("Top 10 Leaderboard (Lowest Score on Top):", data);
     });
 
     return () => {
