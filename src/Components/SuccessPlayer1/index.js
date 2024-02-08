@@ -51,11 +51,11 @@ const SuccessPlayer1 = () => {
               </div>
             </NavLink>
 
-            <NavLink to="/Player2Registration" style={{textDecoration: 'none'}}>
+            {/* <NavLink to="/Player2Registration" style={{textDecoration: 'none'}}>
               <div style={{display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'center', marginTop: '60px'}}>
                   <button id="buttontext" style={{background: 'white', height: '70px', padding: '10px', width: '350px', backgroundColor: 'white', borderRadius: '120px', fontSize: '25px', color: '#1E1450', border: '1px solid transparent'}}>REGISTER PLAYER 2</button>
               </div>
-            </NavLink>
+            </NavLink> */}
           </div> 
 
     </div>
