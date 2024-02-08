@@ -1,57 +1,89 @@
 import React, { useEffect, useState } from 'react';
 import firebase from '../../firebase';
+// ... (previous imports)
 
-const Leaderboard = () => {
+const AdminPage = () => {
   const [leaderboardData, setLeaderboardData] = useState([]);
+  const [updatedScore, setUpdatedScore] = useState('');
 
-  // Set up a listener to fetch and update the leaderboard in real-time
   useEffect(() => {
-    const Users = firebase.firestore().collection("Users");
-
-    // Query Firestore to fetch the top 10 users based on "Score" in ascending order
-    const query = Users.orderBy("Score", "asc").limit(10);
-
-    const unsubscribe = query.onSnapshot((querySnapshot) => {
-      const data = [];
-      querySnapshot.forEach((doc) => {
-        data.push({ id: doc.id, ...doc.data() });
-      });
-      setLeaderboardData(data);
-    });
-
-    // Return a cleanup function to unsubscribe from the snapshot listener when the component unmounts
-    return () => {
-      unsubscribe();
-    };
+    fetchData();
   }, []);
 
-  return (
-    <>
-      <div style={{ display: "flex", flexDirection: "column", width: "100vw", height: "100vh", justifyContent: "center", alignItems: "center", textAlign: 'center', backgroundColor: '#1E1450' }}>
-        <div style={{width:'100vw', display: "flex", justifyContent: "center", alignItems: "center"}}>
-          <h1 className="specialFont" style={{color: 'white'}}>LEADERBOARD</h1>
-        </div>
-        <div style={{width: '100vw', background: '#1E1450', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-          <table style={{width: '400px', border:'1px solid white', borderBottom: 'none'}}>
-            <thead style={{border:'1px solid white'}}>
-              <tr style={{border:'1px solid white'}}>
-                <th style={{color: 'white', padding:'10px', background: 'black', borderBottom: '1px solid white', borderRight: '1px solid white'}} className="specialFont">NAME</th>
-                <th style={{color: 'white', padding:'10px', background: 'black', borderBottom: '1px solid white', borderLeft: 'none'}} className="specialFont">SCORE</th>
-              </tr>
-            </thead>
-            <tbody>
-              {leaderboardData.map((user) => (
-                <tr key={user.id}>
-                  <td style={{padding:'10px', borderBottom: '1px solid white', borderRight: '1px solid white'}}>{user.Name}</td>
-                  <td style={{padding:'10px', borderBottom: '1px solid white'}}>{user.Score}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </>
-  )
-}
+  const fetchData = async () => {
+    try {
+      const leaderboardRef = firebase.firestore().collection('Leaderboard');
+      const snapshot = await leaderboardRef.orderBy('Score', 'asc').get();
 
-export default Leaderboard;
+      const data = snapshot.docs.map(doc => ({
+        id: doc.id,
+        name: doc.data().Name,
+        score: doc.data().Score,
+        // Add other fields as needed
+      }));
+
+      setLeaderboardData(data);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+
+  const handleDelete = async (userId) => {
+    try {
+      await firebase.firestore().collection('Leaderboard').doc(userId).delete();
+      setLeaderboardData(prevData => prevData.filter(entry => entry.id !== userId));
+    } catch (error) {
+      console.error('Error deleting user:', error);
+    }
+  };
+
+  const handleScoreUpdate = async (userId) => {
+    try {
+      await firebase.firestore().collection('Leaderboard').doc(userId).update({
+        Score: parseInt(updatedScore) // Assuming Score is a number
+      });
+      setUpdatedScore('');
+      fetchData(); // Fetch data again to update the leaderboard
+    } catch (error) {
+      console.error('Error updating score:', error);
+    }
+  };
+
+  return (
+    <div style={{ height: '100vh', overflowY: 'scroll', background: 'white' }}>
+      <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Score</th>
+            <th>Action</th>
+            <th>Update Score</th> {/* New column for updating score */}
+          </tr>
+        </thead>
+        <tbody>
+          {leaderboardData.map((entry, index) => (
+            <tr key={entry.id}>
+              <td>{index + 1}</td>
+              <td>{entry.name}</td>
+              <td>{entry.score}</td>
+              <td>
+                <button onClick={() => handleDelete(entry.id)}>Delete</button>
+              </td>
+              <td>
+                <input
+                  type="number"
+                  value={updatedScore}
+                  onChange={(e) => setUpdatedScore(e.target.value)}
+                />
+                <button onClick={() => handleScoreUpdate(entry.id)}>Update</button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
+
+export default AdminPage;
